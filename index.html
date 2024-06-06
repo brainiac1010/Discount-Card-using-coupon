@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30% Discount Card using coupon</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="bg-gradient-to-r from-green-400 to-blue-500 text-white text-center py-4 px-6">
+            <h2 class="text-2xl font-bold">Special Discount</h2>
+        </div>
+        <div class="p-6 text-center">
+            <p class="text-gray-700 text-lg mb-4">Price: <span class="font-bold text-gray-900">1000 Tk</span></p>
+            <p class="text-gray-600 mb-4">Enter coupon code to get 30% off your purchase.</p>
+            <input type="text" id="discountCode" class="w-full p-2 border border-gray-300 rounded-lg mb-4"
+                placeholder="Enter discount code 'DISC' ">
+            <button id="applyDiscount"
+                class="w-full bg-green-500 text-white py-2 rounded-lg shadow hover:bg-green-600 transition duration-300">
+                Apply
+            </button>
+            <p id="finalPrice" class="text-lg font-semibold mt-4 hidden">Pay: <span id="price">1000 Tk</span></p>
+            <p id="errorMessage" class="text-red-600 text-sm mt-2 hidden">Invalid code. Paying full price.</p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
